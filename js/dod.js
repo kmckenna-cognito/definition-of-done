@@ -97,6 +97,7 @@ function createFormGroup(title, description, checked) {
     var textarea = document.createElement("textarea");
     textarea.value = description;
     textarea.className = "form-control";
+    textarea.placeholder = "Description";
     formGroup.appendChild(textarea);
 
     return formGroup;
