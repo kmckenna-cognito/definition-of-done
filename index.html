@@ -1,0 +1,23 @@
+<html>
+<head>
+    <link rel="stylesheet" href="css/bootstrap.css"/>
+    <script src="js/dod.js"></script>
+    <title>Definition of Done</title>
+</head>
+<body onload="populateForm()">
+<div class="container">
+    <div class="jumbotron">
+        <h1 class="text-xs-center">Definition of Done</h1>
+        <hr/>
+        <button class="btn btn-secondary text-xs-center" onclick="populateFromJira()">Paste Jira text</button>
+        <hr/>
+        <form id="form-dod"></form>
+        <button class="btn btn-success text-xs-center" onclick="generateJiraText()">Submit</button>
+        <hr/>
+
+        <h2 class="text-xs-center">Output</h2>
+        <code id="output"></code>
+    </div>
+</div>
+</body>
+</html>
